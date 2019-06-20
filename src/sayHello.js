@@ -4,7 +4,7 @@
  */
 
 function sayHello() {
-  document.write('hello world! i am npx webpack-cli')
+  document.write('hello world! i am npx webpack')
 }
 
 module.exports = sayHello;
