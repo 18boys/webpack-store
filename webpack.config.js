@@ -7,4 +7,10 @@ module.exports = {
   // output: {
   //   filename: 'bundle.js'
   // },
+  mode: 'development',
+  optimization: {
+    namedModules: false,
+  },
+  devtool: 'nosources-source-map',
+
 };
