@@ -3,14 +3,26 @@
  * @author shuai.li
  */
 module.exports = {
-  // entry: './src/index.js',
-  // output: {
-  //   filename: 'bundle.js'
-  // },
+  entry: () => {
+    return new Promise((resolve) => {
+      const files = {
+        'main': ['./src/index.js'],
+        'add': './src/add.js',
+        // 'vendor': ['lodash'],
+      };
+      resolve(files)
+    });
+  },
+  output: {
+    filename: '[name].js'
+  },
   mode: 'development',
   optimization: {
     namedModules: false,
+    splitChunks: {
+      chunks: 'all',
+    }
   },
-  devtool: 'nosources-source-map',
+  // devtool: 'nosources-source-map',
 
 };

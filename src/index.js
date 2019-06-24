@@ -11,10 +11,17 @@ import sayHello, { name } from './sayHello.js';
 // import './reftwoCom';
 // import './refthreeCom';
 
-import {log} from './circle-one';
-log();
+import _  from 'lodash';
+console.log(_.difference([1,2,3],[2,3]));
 
-sayHello();
+// import {log} from './circle-one';
+// log();
+//
+// sayHello();
+
+
+
+
 
 // console.log('name', name);
 // console.log('single', single, a);
