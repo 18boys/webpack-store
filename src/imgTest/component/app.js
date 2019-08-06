@@ -1,5 +1,5 @@
 import React from 'react';
-import testImg from '../../static/jpg/test-js.jpg';
+import testImg from '../../../static/jpg/test-js.jpg';
 import './style.css';
 
 export default class App extends React.Component {

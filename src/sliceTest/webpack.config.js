@@ -2,16 +2,19 @@
  * @file webpack.config.js
  * @author shuai.li
  */
-
+const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
+
+const resolve=(p='')=> path.resolve(__dirname, p);
 module.exports = {
+  context: resolve(),
   entry: () => {
     return new Promise((resolve) => {
       const files = {
-        // 'main': ['./src/index.js'],
-        'entry': './src/entry.js',
+        'entry': resolve('./entry.js'),
       };
       resolve(files)
     });
@@ -66,9 +69,9 @@ module.exports = {
   },
   devtool: 'cheap-source-map',
   plugins: [
+    new CleanWebpackPlugin(),
     new CopyPlugin([
-      {from: 'static', to: 'static'},
-      {from: 'index.html', to: 'index.html'},
+      {from: resolve('./src/sliceTest/index.html'), to: 'index.html'},
     ]),
     new MiniCssExtractPlugin({
       filename: '[name].css',

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config  webpack.config.js",
+    "build": "webpack --config  ./src/sliceTest/webpack.config.js",
+    "sliceTest": "webpack-dev-server --config  ./src/sliceTest/webpack.config.js",
     "pack": "node ./build/index.js"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
@@ -34,7 +35,8 @@
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",
     "webpack": "^4.34.0",
-    "webpack-cli": "^3.3.4"
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "lodash": "^4.17.11",
