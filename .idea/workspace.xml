@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b973c55-3152-416b-85f4-14594bbdc06f" name="Default Changelist" comment="feat: 删除无用代码">
-      <change afterPath="$PROJECT_DIR$/src/imgTest/component/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/imgTest/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sliceTest/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sliceTest/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgTest/component/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgTest/component/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/imgTest/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sliceTest/webpack.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="6b973c55-3152-416b-85f4-14594bbdc06f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +251,7 @@
       <workItem from="1562730896709" duration="4000" />
       <workItem from="1564366796773" duration="64000" />
       <workItem from="1564366872871" duration="1916000" />
-      <workItem from="1565054134260" duration="1707000" />
+      <workItem from="1565054134260" duration="2004000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 删除无用代码">
       <created>1565054215321</created>
@@ -272,17 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1565054215321</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 改成多个文件夹每个文件夹分别测试一块功能">
+      <created>1565055898911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565055898911</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24808000" />
+    <option name="totallyTimeSpent" value="25105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15534492" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15534492" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -295,7 +289,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3090172" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4123607" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -307,7 +301,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 删除无用代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 删除无用代码" />
+    <MESSAGE value="feat: 改成多个文件夹每个文件夹分别测试一块功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 改成多个文件夹每个文件夹分别测试一块功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/copy-webpack-plugin/dist/cjs.js">
