@@ -3,7 +3,9 @@
  * @author shuai.li
  */
 
-var copyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   entry: () => {
     return new Promise((resolve) => {
@@ -47,7 +49,13 @@ module.exports = {
         test: /\.css$/,
         use:  [
           {
-            loader: 'style-loader',
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it uses publicPath in webpackOptions.output
+              // publicPath: '../',
+              hmr: process.env.NODE_ENV === 'development',
+            },
           },
           {
             loader: 'css-loader',
@@ -58,9 +66,14 @@ module.exports = {
   },
   devtool: 'cheap-source-map',
   plugins: [
-    new copyPlugin([
+    new CopyPlugin([
       {from: 'static', to: 'static'},
       {from: 'index.html', to: 'index.html'},
-    ])
+    ]),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false,
+    }),
   ]
 };
